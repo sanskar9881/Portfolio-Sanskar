@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanskar Hadole — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">SH<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon sun">☀️</span>
+        <span class="theme-icon moon">🌙</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mob-link">Home</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#experience" class="mob-link">Experience</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge reveal">
+          <span class="pulse-dot"></span> Available for opportunities
+        </div>
+        <h1 class="hero-name reveal">
+          Sanskar<br><span class="accent">Hadole</span>
+        </h1>
+        <p class="hero-role reveal">Full-Stack Engineer <span class="sep">·</span> Security Specialist <span class="sep">·</span> AI/ML Enthusiast</p>
+        <p class="hero-tagline reveal">
+          Designing secure, scalable enterprise solutions with<br>AI-driven intelligence and full-stack expertise.
+        </p>
+        <div class="hero-socials reveal">
+          <a href="https://linkedin.com/in/sanskarhadole12234" target="_blank" class="social-btn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:hadolesanskar@gmail.com" class="social-btn" title="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://github.com/" target="_blank" class="social-btn" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </div>
+        <div class="hero-btns reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#about" class="btn btn-outline">Get to Know Me ↓</a>
+        </div>
+      </div>
+
+      <div class="hero-image reveal">
+        <div class="img-frame">
+          <img src="image/IMG_9503.JPG" alt="Sanskar Hadole" class="profile-hero" />
+          <div class="img-ring"></div>
+          <div class="img-ring-2"></div>
+        </div>
+        <!-- floating tags -->
+        <div class="float-tag tag-1">
+          <span>💻</span> Full-Stack Dev
+        </div>
+        <div class="float-tag tag-2">
+          <span>🔒</span> Cybersecurity
+        </div>
+        <div class="float-tag tag-3">
+          <span>🚀</span> Open to Work
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down">
+      <span>Scroll</span>
+      <div class="scroll-line"><div class="scroll-dot"></div></div>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-img-col reveal-left">
+          <div class="about-img-wrap">
+            <img src="image/IMG_9320.JPG" alt="Sanskar Hadole" class="about-photo" />
+            <div class="about-img-deco"></div>
+          </div>
+        </div>
+
+        <div class="about-text-col reveal-right">
+          <p class="section-label">Who I Am</p>
+          <h2 class="section-title">About <span class="accent">Me</span></h2>
+
+          <div class="about-info-card">
+            <div class="info-row"><span class="info-label">Name</span><span class="info-val">Sanskar Arvind Hadole</span></div>
+            <div class="info-row"><span class="info-label">Location</span><span class="info-val">Pune, Maharashtra 🇮🇳</span></div>
+            <div class="info-row"><span class="info-label">Role</span><span class="info-val">Associate Software Developer</span></div>
+            <div class="info-row"><span class="info-label">Education</span><span class="info-val">B.E. Computer Engineering</span></div>
+          </div>
+
+          <p class="about-para">
+            I'm a Computer Science engineer who builds enterprise-grade software. I've created SecureDesk, a live multi-tenant AI/ML Data Loss Prevention platform, and led its entire stack: React & TypeScript frontend, FastAPI backend, MongoDB Atlas infrastructure, and CI/CD pipelines. I combine full-stack engineering with deep expertise in cybersecurity, cloud architecture, and AI/ML integration. I've led international teams at AIESEC (20+ countries), deployed enterprise MDM solutions with Microsoft Intune, and authored IEEE research papers. I care about clean code, scalable systems, secure architectures, and teams that move fast.
+          </p>
+
+          <div class="about-btns">
+            <a href="image/Sanskar_Arvind_Hadole_FlowCV_Resume_2026-03-02.pdf" download class="btn btn-primary">Download CV ↓</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <p class="section-label text-center reveal">What I Know</p>
+      <h2 class="section-title text-center reveal">Skills & <span class="accent">Expertise</span></h2>
+      <p class="section-sub text-center reveal">A full-stack toolkit — from pixel-perfect frontends to secure backend systems.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🗣️</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML5/CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🎨</span>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">React 18</span>
+            <span class="skill-tag">Vite</span>
+            <span class="skill-tag">TailwindCSS</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">SCSS</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Responsive UI</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⚙️</span>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">MongoDB Atlas</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Async/Await</span>
+            <span class="skill-tag">JWT Auth</span>
+            <span class="skill-tag">Webhooks</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠️</span>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Render</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git/GitHub</span>
+            <span class="skill-tag">CI/CD Pipelines</span>
+            <span class="skill-tag">MongoDB Atlas</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤝</span>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">CRM</span>
+            <span class="skill-tag">Public Relations</span>
+            <span class="skill-tag">Marketing</span>
+            <span class="skill-tag">Entrepreneurship</span>
+            <span class="skill-tag">Financial Management</span>
+            <span class="skill-tag">Resilience</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🔒</span>
+            <h3>Security & MDM</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Loss Prevention</span>
+            <span class="skill-tag">Microsoft Intune</span>
+            <span class="skill-tag">UEBA Analytics</span>
+            <span class="skill-tag">Risk Scoring</span>
+            <span class="skill-tag">Phishing Detection</span>
+            <span class="skill-tag">Privacy Frameworks</span>
+            <span class="skill-tag">DPDP Compliance</span>
+            <span class="skill-tag">Audit Logging</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ EXPERIENCE ═══════════════════════════════ -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <p class="section-label text-center reveal">Where I've Been</p>
+      <h2 class="section-title text-center reveal">Work <span class="accent">Experience</span></h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2025</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Associate Software Developer</h3>
+                <p class="timeline-company">WORKLINE · Chennai, India</p>
+              </div>
+              <span class="timeline-badge">Full-Time</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Implemented Mobile Application & Device Management (MDM) solutions using Microsoft Intune — configuring compliance policies, application security, remote access controls, and DLP for HRMS environments.</li>
+              <li>Contributed to privacy and incident response by assisting in HRMS-aligned privacy frameworks, researching real-world data leaks and phishing cases, and managing structured security reporting via Microsoft Excel.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Microsoft Intune</span><span>MDM/MAM</span><span>HRMS</span><span>Security</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2024–25</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Team Leader — Incoming Corporate Sector</h3>
+                <p class="timeline-company">AIESEC · Pune, India</p>
+              </div>
+              <span class="timeline-badge">Leadership</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Scaled global exchange initiatives using a data-driven approach — building partnerships with companies, NGOs, and academic institutions across 20+ countries while managing CRM workflows and stakeholder communication.</li>
+              <li>Led cross-functional teams and international relations, drove market-informed strategy, successful intern placements, and measurable program growth while mentoring peers into leadership roles.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>CRM</span><span>Leadership</span><span>International Relations</span><span>Strategy</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ EDUCATION ═══════════════════════════════ -->
+  <section class="education section" id="education">
+    <div class="container">
+      <p class="section-label text-center reveal">Academic Background</p>
+      <h2 class="section-title text-center reveal">Edu<span class="accent">cation</span></h2>
+
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-year">2021 – 2026</div>
+          <h3>B.E. Computer Engineering</h3>
+          <p class="edu-school">Savitribai Phule Pune University</p>
+          <p class="edu-location">📍 Pune, India</p>
+          <div class="edu-grade">CGPA <strong>8.5</strong></div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon">📘</div>
+          <div class="edu-year">2019 – 2021</div>
+          <h3>12th HSC</h3>
+          <p class="edu-school">Vidya Bharati Mahavidyalaya</p>
+          <p class="edu-location">📍 Amravati, India</p>
+          <div class="edu-grade"><strong>83%</strong></div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon">📗</div>
+          <div class="edu-year">2007 – 2019</div>
+          <h3>10th SSC</h3>
+          <p class="edu-school">Golden Kids English High School</p>
+          <p class="edu-location">📍 Amravati, India</p>
+          <div class="edu-grade"><strong>60%</strong></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <p class="section-label text-center reveal">What I've Built</p>
+      <h2 class="section-title text-center reveal">Featured <span class="accent">Projects</span></h2>
+      <p class="section-sub text-center reveal">Real-world software built with purpose, not just practice.</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal featured-project">
+          <div class="project-badge">★ Flagship</div>
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <span class="project-emoji">🛡️</span>
+            </div>
+            <span class="project-num">01</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">SecureDesk — AI/ML Data Loss Prevention Platform</h3>
+            <p class="project-desc">Live multi-tenant B2B SaaS covering 20+ application screens with a 10-collection MongoDB data model. Built from scratch with React 18, TypeScript, Vite frontend; async FastAPI backend; MongoDB Atlas infrastructure. Features AI-powered risk scoring, UEBA behavioral analytics, compliance reporting (DPDP Act 2023), and Chrome Manifest V3 extension.</p>
+            <div class="project-highlights">
+              <strong>Key Achievements:</strong>
+              <ul>
+                <li>Weighted risk-scoring engine with regex-based PII detection (PAN, Aadhaar, API keys)</li>
+                <li>LLM classification tier (Claude, GPT) with automatic fallback to rule-based scoring</li>
+                <li>UEBA analytics on 30-day rolling per-user baselines for anomaly detection</li>
+                <li>JWT + bcrypt auth, RBAC, SHA-256 file fingerprinting, document watermarking</li>
+                <li>Git-push-triggered CI/CD to Vercel & Render, declarative infrastructure</li>
+                <li>RAG-based AI assistant for natural-language activity log queries</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span>React 18</span><span>TypeScript</span><span>FastAPI</span><span>MongoDB Atlas</span><span>Claude/GPT</span><span>UEBA</span><span>DLP</span><span>Vercel</span><span>Render</span>
+            </div>
+            <div class="project-links">
+              <a href="https://securedesk-beige.vercel.app" target="_blank" class="btn btn-sm btn-primary">View Live ↗</a>
+              <a href="https://github.com/sanskar9881" class="btn btn-sm btn-ghost">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <span class="project-emoji">📱</span>
+            </div>
+            <span class="project-num">02</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Enterprise MDM/MAM — Microsoft Intune Deployment</h3>
+            <p class="project-desc">Full-scale Mobile Application and Device Management deployment at WORKLINE. Configured device compliance policies, endpoint protection, remote access controls, and DLP rules to enforce corporate-personal data separation across HRMS environments.</p>
+            <div class="project-tech">
+              <span>Microsoft Intune</span><span>MDM</span><span>MAM</span><span>DLP</span><span>Endpoint Security</span><span>HRMS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary">Case Study ↗</a>
+              <a href="https://github.com/sanskar9881" class="btn btn-sm btn-ghost">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <span class="project-emoji">🎣</span>
+            </div>
+            <span class="project-num">03</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Phishing Detection System — ML & NLP</h3>
+            <p class="project-desc">A real-time phishing detection system that analyzes URLs and page behavior to flag scams across websites and applications. Combines machine learning and natural language processing to provide enhanced user protection against fraudulent activities.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Machine Learning</span><span>NLP</span><span>REST API</span><span>React</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary">Live Demo ↗</a>
+              <a href="https://github.com/sanskar9881" class="btn btn-sm btn-ghost">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <span class="project-emoji">✋</span>
+            </div>
+            <span class="project-num">04</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">GestureOS — Hand-Gesture Recognition (Computer Vision)</h3>
+            <p class="project-desc">Real-time hand-gesture recognition system enabling touchless device control through laptop camera input. Built to improve accessibility for users with visual impairments, using advanced computer vision and machine learning.</p>
+            <div class="project-tech">
+              <span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>Computer Vision</span><span>ML</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary">Live Demo ↗</a>
+              <a href="https://github.com/sanskar9881" class="btn btn-sm btn-ghost">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <p class="section-label text-center reveal">Let's Build Together</p>
+      <h2 class="section-title text-center reveal">Get In <span class="accent">Touch</span></h2>
+      <p class="section-sub text-center reveal">Open to internships, junior roles, freelance projects, and exciting collaborations.</p>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal-left">
+          <h3>Let's <span class="accent">Connect</span></h3>
+          <p class="contact-intro">Whether you have a project in mind, a role that fits, or just want to chat about tech — my inbox is open.</p>
+
+          <div class="contact-items">
+            <a href="mailto:hadolesanskar@gmail.com" class="contact-item">
+              <div class="contact-item-icon">📧</div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-val">hadolesanskar@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+919881337341" class="contact-item">
+              <div class="contact-item-icon">📱</div>
+              <div>
+                <span class="contact-item-label">Phone</span>
+                <span class="contact-item-val">+91 98813 37341</span>
+              </div>
+            </a>
+            <div class="contact-item no-link">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-val">Pune, Maharashtra, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social-links">
+            <a href="https://linkedin.com/in/sanskarhadole12234" target="_blank" class="social-link-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:hadolesanskar@gmail.com" class="social-link-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Gmail
+            </a>
+            <a href="https://github.com/" target="_blank" class="social-link-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" placeholder="Project Collaboration, Internship..." />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="5" placeholder="Hi Sanskar, I'd love to discuss..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message ✉️</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">SH<span class="accent">.</span></p>
+      <p class="footer-copy">© 2025 Sanskar Hadole. Built with ❤️ and clean code.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
